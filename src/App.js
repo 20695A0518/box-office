@@ -1,25 +1,24 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Navs from './Components/Navs';
+import { Switch, Route } from 'react-router';
 import Home from './Pages/Home';
-import Started from './Pages/Started';
+import Starred from './Pages/Starred';
 
 function App() {
     return ( <
-        div >
+        Switch >
         <
-        Navs > < /Navs>/ { ' ' } <
-        Routes >
+        Route exact path = "/" >
         <
-        Route exact path = "/"
-        element = { < Home / > } > { ' ' } <
+        Home / >
+        <
         /Route>{' '} <
-        Route path = "/started"
-        element = { < Started / > } > { ' ' } <
+        Route exact path = "/Starred" >
+        <
+        Starred / > { ' ' } <
         /Route>{' '} <
-        Route > < /Route>{' '} <
-        /Routes>{' '} <
-        /div>
+        Route / >
+        <
+        /Switch>
     );
 }
 

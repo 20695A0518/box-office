@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const LINKS = [
     { to: '/', text: 'Home' },
-    { to: '/started', text: 'started' },
+    { to: '/starred', text: 'starred' },
 ];
 
 function Navs() {
@@ -14,11 +14,11 @@ function Navs() {
             LINKS.map(item => ( <
                 li key = { item.to } >
                 <
-                Link to = { item.to } > { item.text } < /Link> <
+                Link to = { item.to } > { item.text } < /Link>{' '} <
                 /li>
             ))
-        } <
-        /ul> <
+        } { ' ' } <
+        /ul>{' '} <
         /div>
     );
 }
