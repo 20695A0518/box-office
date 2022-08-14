@@ -1,16 +1,25 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import Navs from './Components/Navs';
+import Home from './Pages/Home';
+import Started from './Pages/Started';
 
 function App() {
     return ( <
+        div >
+        <
+        Navs > < /Navs>/ { ' ' } <
         Routes >
         <
-        Route exact path = "/" > { ' ' }
-        This home page { ' ' } <
+        Route exact path = "/"
+        element = { < Home / > } > { ' ' } <
         /Route>{' '} <
-        Route path = "/started" > started the pages < /Route>{' '} <
-        Route > this 404 pages < /Route> <
-        /Routes>
+        Route path = "/started"
+        element = { < Started / > } > { ' ' } <
+        /Route>{' '} <
+        Route > < /Route>{' '} <
+        /Routes>{' '} <
+        /div>
     );
 }
 
