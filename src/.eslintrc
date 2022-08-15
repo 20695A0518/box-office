@@ -6,7 +6,6 @@
   },
   "parser": "@babel/eslint-parser",
   "rules": {
-    "no-console": [0], // eslint-disable-next-line no-console
     "no-plusplus": [0],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/prop-types": [0],
