@@ -4,22 +4,17 @@ import Home from './Pages/Home';
 import Starred from './Pages/Starred';
 
 function App() {
-    return ( <
-        Switch >
-        <
-        Route exact path = "/" >
-        <
-        Home / >
-        <
-        /Route>{' '} <
-        Route exact path = "/Starred" >
-        <
-        Starred / > { ' ' } <
-        /Route>{' '} <
-        Route / >
-        <
-        /Switch>
-    );
+  return (
+    <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route exact path="/Starred">
+        <Starred />
+      </Route>
+      <Route />
+    </Switch>
+  );
 }
 
 export default App;
